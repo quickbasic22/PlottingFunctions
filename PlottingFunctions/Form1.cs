@@ -36,6 +36,18 @@ namespace PlottingFunctions
 
             e.Graphics.TranslateTransform(10, -6);
 
+            listBox1.Items.Add("X");
+            listBox1.Items.Add(e.Graphics.ClipBounds.X);
+            listBox1.Items.Add("Y");
+            listBox1.Items.Add(e.Graphics.ClipBounds.Y);
+            listBox1.Items.Add("Width");
+            listBox1.Items.Add(e.Graphics.ClipBounds.Width);
+            listBox1.Items.Add("Height");
+            listBox1.Items.Add(e.Graphics.ClipBounds.Height);
+            listBox1.Items.Add("Left Right");
+            listBox1.Items.Add(e.Graphics.ClipBounds.Left + " " + e.Graphics.ClipBounds.Right);
+            listBox1.Items.Add("Top Bottom");
+            listBox1.Items.Add(e.Graphics.ClipBounds.Top + " " + e.Graphics.ClipBounds.Bottom);
 
             float thick = float.Parse(numericUpDown1.Value.ToString());
             float over = float.Parse(numericUpDown2.Value.ToString());
